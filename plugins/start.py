@@ -34,7 +34,7 @@ from database.database import add_user, del_user, full_userbase, present_user
 from shortzy import Shortzy
 
 """add time in seconds for waiting before delete 
-1 min = 60, 2 min = 60 × 2 = 120, 5 min = 60 × 5 = 300"""
+1 min = 60, 2 min = 60 × 2 = 120, 5 min = 60 × 5 = 300, 525601 min = 60 × 525601 = 31536060"""
 # SECONDS = int(os.getenv("SECONDS", "1200"))
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
