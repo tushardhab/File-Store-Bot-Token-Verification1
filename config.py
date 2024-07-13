@@ -27,11 +27,11 @@ DB_NAME = os.environ.get("DATABASE_NAME", "filestore12")
 
 #Shortner (token system) 
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "ATGLINKS.COM")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "49e836a49e2662195606e80119e468680ae90edf")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "Publicearn.com")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "a3726ab13339d68dfd481041dadd4ebebaebc11b")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
-TUT_VID = os.environ.get("TUT_VID","https://t.me/How_to_Download_7x/32")
+TUT_VID = os.environ.get("TUT_VID","https://t.me/THEHEATHERS_OFFICIAL/46")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001678918073"))
