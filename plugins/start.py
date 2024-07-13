@@ -128,17 +128,6 @@ async def start_command(client: Client, message: Message):
                 except:
                     pass
 
-            SD = await message.reply_text("➭ 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 :- @HKOWNER0🪴")
-            await asyncio.sleep(0)
-
-            for snt_msg in snt_msgs:
-                try:
-                    await snt_msg.delete()
-                    await SD.delete()
-                except:
-                    pass
-
-
         elif verify_status['is_verified']:
             reply_markup = InlineKeyboardMarkup(
                 [[InlineKeyboardButton("• ᴀʙᴏᴜᴛ ᴍᴇ", callback_data="about"),
