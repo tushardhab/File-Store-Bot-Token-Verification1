@@ -5,44 +5,44 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6948767194:AAGE5qDxJOII1PEsZMa2iC8fB4UzMTPW6Yc")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7334934448:AAFxg5vSvAET2vkURPIy-fbO6od_zDUnBw8")
 
-APP_ID = int(os.environ.get("APP_ID", "24798261"))
+APP_ID = int(os.environ.get("APP_ID", "23475322"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "fef280037f5759eccc540c6d7a279a14")
+API_HASH = os.environ.get("API_HASH", "e00e5cebf073df8baba7db34ea0ebdc9")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002227081660"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002217886534"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6155478725"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6170050819"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://rajeshpro123321:Vs9n8R90yUtCIyu4@clonestore1.w51yrrp.mongodb.net/?retryWrites=true&w=majority&appName=clonestore1")
-DB_NAME = os.environ.get("DATABASE_NAME", "clonestore1")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Hshshssh:ehejsjs@cluster0.rnl2vwv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #Shortner (token system) 
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "Publicearn.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "a3726ab13339d68dfd481041dadd4ebebaebc11b")
-VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "Vipurl.in")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "5a46477839bb186f9d168d34295a0db50eae2f05")
+VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 21600)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID","https://t.me/THEHEATHERS_OFFICIAL/46")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001678918073"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002220436117"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>𝐇𝐞𝐥𝐥𝐨 {first}\n\n 𝐈 𝐚𝐦 𝐇𝐊 𝐒𝐓𝐎𝐑𝐄 𝐁𝐎𝐓 𝐈 𝐰𝐢𝐥𝐥 𝐬𝐡𝐚𝐫𝐞 𝐲𝐨𝐮𝐫 𝐜𝐨𝐧𝐭𝐞𝐧𝐭 𝐡𝐞𝐫𝐞 𝐟𝐢𝐫𝐬𝐭 𝐯𝐞𝐫𝐢𝐟𝐲 𝐌𝐞 𝐟𝐨𝐫 𝟐𝟒𝐡𝐫𝐬 𝐭𝐨 𝐠𝐞𝐭 𝐲𝐨𝐮𝐫 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐂𝐨𝐧𝐭𝐞𝐧𝐭. \n QUERY » @HKOWNER0</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>𝐇𝐞𝐥𝐥𝐨 {first}\n\n 𝐈 𝐚𝐦 STUDY OCEAN 𝐒𝐓𝐎𝐑𝐄 𝐁𝐎𝐓 𝐈 𝐰𝐢𝐥𝐥 𝐬𝐡𝐚𝐫𝐞 𝐲𝐨𝐮𝐫 𝐜𝐨𝐧𝐭𝐞𝐧𝐭 𝐡𝐞𝐫𝐞 𝐟𝐢𝐫𝐬𝐭 𝐯𝐞𝐫𝐢𝐟𝐲 𝐌𝐞 𝐟𝐨𝐫 6 𝐡𝐫𝐬 𝐭𝐨 𝐠𝐞𝐭 𝐲𝐨𝐮𝐫 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐂𝐨𝐧𝐭𝐞𝐧𝐭. \n QUERY » @study_ocean_bot</b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6155478725 5347709348").split()):
+    for x in (os.environ.get("ADMINS", "6170050819 6155478725").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -54,16 +54,16 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "𝐒𝐨𝐫𝐫𝐲 {first} �
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b> </b>")
 
 #set True if you want to prevent users from forwarding files from bot
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
 
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "HEllO ! ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ OWNER!!\n\n» ᴍʏ ᴏᴡɴᴇʀ : @HKOWNER0"
+USER_REPLY_TEXT = "HEllO ! ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ OWNER!!\n\n» ᴍʏ ᴏᴡɴᴇʀ : @study_ocean_bot"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6155478725)
+ADMINS.append(6170050819)
 
 LOG_FILE_NAME = "codeflixbot.txt"
 
