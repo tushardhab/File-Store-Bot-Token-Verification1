@@ -1,4 +1,4 @@
-# Thanks @Codeflix_Bots
+# Thanks @hkowner0
 
 import os
 import logging
