@@ -27,9 +27,9 @@ DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #Shortner (token system) 
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "Vipurl.in")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "5a46477839bb186f9d168d34295a0db50eae2f05")
-VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 21600)) # Add time in seconds
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "publicearn.com")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "412bd99fccfca9af6a7f44f2b6407007467cdbbb")
+VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 43200)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID","https://t.me/THEHEATHERS_OFFICIAL/46")
 
@@ -39,7 +39,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002220436117"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>𝐇𝐞𝐥𝐥𝐨 {first}\n\n 𝐈 𝐚𝐦 STUDY OCEAN 𝐒𝐓𝐎𝐑𝐄 𝐁𝐎𝐓 𝐈 𝐰𝐢𝐥𝐥 𝐬𝐡𝐚𝐫𝐞 𝐲𝐨𝐮𝐫 𝐜𝐨𝐧𝐭𝐞𝐧𝐭 𝐡𝐞𝐫𝐞 𝐟𝐢𝐫𝐬𝐭 𝐯𝐞𝐫𝐢𝐟𝐲 𝐌𝐞 𝐟𝐨𝐫 6 𝐡𝐫𝐬 𝐭𝐨 𝐠𝐞𝐭 𝐲𝐨𝐮𝐫 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐂𝐨𝐧𝐭𝐞𝐧𝐭. \n QUERY » @study_ocean_bot</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>𝐇𝐞𝐥𝐥𝐨 {first}\n\n 𝐈 𝐚𝐦 STUDY OCEAN 𝐒𝐓𝐎𝐑𝐄 𝐁𝐎𝐓 𝐈 𝐰𝐢𝐥𝐥 𝐬𝐡𝐚𝐫𝐞 𝐲𝐨𝐮𝐫 𝐜𝐨𝐧𝐭𝐞𝐧𝐭 𝐡𝐞𝐫𝐞 𝐟𝐢𝐫𝐬𝐭 𝐯𝐞𝐫𝐢𝐟𝐲 𝐌𝐞 𝐟𝐨𝐫 12 𝐡𝐫𝐬 𝐭𝐨 𝐠𝐞𝐭 𝐲𝐨𝐮𝐫 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐂𝐨𝐧𝐭𝐞𝐧𝐭. \n QUERY » @study_ocean_bot</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "6170050819 6155478725").split()):
